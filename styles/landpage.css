@@ -1,0 +1,105 @@
+.landpage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background: white; */
+}
+.landpage-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.land-wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: grid;
+    grid-template-columns:repeat(12,1fr) ;
+    grid-template-rows:repeat(12,1fr) ;
+    /* background: white; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+}
+.land-header{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    /* border: 3px solid blue; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.land-header h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.navs .links{
+    display: flex;
+    align-items: center;
+    list-style-type:none;
+
+}
+.navs ul li{
+    margin-right: 15px;
+}
+.navs ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    transition: color 0.3s;
+}
+.hamburger{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.navs ul li a:hover{
+    color: rgb(216, 216, 216);
+}
+.land-content{
+    grid-column: 3/11;
+    grid-row: 4/10;
+    /* border: 3px solid blue; */
+    color: whitesmoke;
+    text-align: center;
+}
+.land-content h1{
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+.land-content p{
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.links-container{
+    grid-column: 2/12;
+    grid-row: 11/12;
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.links-container a{
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition:  0.3s;
+}
+.links-container a:hover{
+    background: whitesmoke;
+    color: rgba(0,0,0,0.8);
+}

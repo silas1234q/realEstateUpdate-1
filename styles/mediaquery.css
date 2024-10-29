@@ -1,0 +1,455 @@
+@media (max-width: 768px)  {
+    .landpage{
+        max-width: 768px;
+        height: 100%;
+        isolation: isolate;
+        position: relative;
+    }
+    .navs{
+        background: rgba(0,0,0,0.9);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: circle(15% at right top);
+        z-index: -1;
+        transition: visibility 0.3s;
+      
+    }
+    .visible{
+        visibility: visible;
+        transition: 0.3s;
+    }
+    .navs.visible{
+        clip-path: circle(100%);
+        z-index: 1;
+    }
+    
+    .links{
+        flex-direction: column;
+        
+    }
+  
+    .links li{
+        margin-bottom: 20px;
+    }
+    .navs .links li a{
+        color: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.6s,opacity 0.6s;
+       
+    }
+    .navs.visible .links li a{
+        visibility: visible;
+        opacity: 1;
+    }
+    .hamburger{
+        display: block;
+        z-index: 2;
+    }
+    .land-content{
+        display: grid;
+        place-items: center;
+    }
+    .land-content h1{
+        font-size: 2rem;
+        margin: auto;
+    }
+    .land-content p{
+        margin: auto;
+    }
+    .links-container{
+        grid-row: 11/12;
+        padding: 20px;
+    }
+    .links-container a{
+        text-align: center;
+       
+        
+       
+    }
+    .static-bar{
+        display: block;
+    }
+   
+    .reviews{
+        grid-template-columns: repeat(12,fr);
+        height: 80%;
+        margin-top: 0;
+        margin-bottom:0 ;
+    }
+
+    .account-rev-box{
+        height: 90px;
+        width: 250px;
+    }
+    .account-rev-box:nth-of-type(1) img{
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+    .account-rev-box:nth-of-type(2) img{
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+    .rev-box{
+        width: 250px;
+        height: 200px;
+    }
+    .rev-box h2{
+        font-size: 0.7rem;
+    }
+    .rev-box svg{
+        width: 14px;
+    }
+    .rev-box p{
+        font-size: 0.8rem;
+    }
+
+    .about-me-content{
+        justify-content: space-evenly;
+        /* border: 2px solid blue; */
+    }
+    .about-me-content img{
+        width: 300px;
+        height: 350px;
+        transform: none;
+        position: static;
+    } 
+    .about-me-text{
+        width: 300px;
+        height: 350px;
+        transform: none;
+        position: static;
+
+    }
+    .about-me-text p{
+        width: 300px;
+        height: 350px;
+        font-size: 0.8rem;
+        transform: none;
+
+    }
+    .about-me-text button{
+        transform: none;
+    }
+    .listings-boxes-container{
+        grid-template-columns: repeat(auto-fit,300px);
+    }
+    .house-info-wrapper{
+        grid-row: 2/12;
+        /* border: 1px soild red; */
+    }
+    .house-info-container img{
+        height: 200px;
+    }
+    .house-side-images{
+        gap: 0.5rem;
+    }
+    .house-side-images img{
+        width: 60px;
+        height: auto;
+    }
+    .video-wrapper img{
+        height: auto;
+    }
+}
+/* mobile large */
+@media (max-width: 430px) {
+    .landpage{
+        max-width:430px ;
+        height: 100%;
+        isolation: isolate;
+        position: relative;
+    }
+    .land-wrapper{
+        isolation: isolate;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navs{
+        background: rgba(0,0,0,0.9);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: circle(15% at right top);
+        /* z-index: -1; */
+        transition: visibility 0.3s;  
+    }
+    .links-container{
+        grid-row: 11/12;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .links-container a{
+        margin: 10px;
+    }
+    .static-bar{
+        display: block;
+    }
+    .reviews{
+        height: 70%;
+    }
+    .rev-header h1{
+        font-size: 1.5rem;
+    }
+    .account-rev-box{
+        width: 200px;
+        margin: 10px;
+    }
+    .account-rev-box svg{
+        width: 18px;
+    }
+    .account-rev-box:nth-of-type(1) img{
+        width: 30px;
+    }
+    .account-rev-box:nth-of-type(2) img{
+        width: 30px;
+    }
+    .rev-box{
+        /* border: 1px solid blue; */
+        width: 150px;
+        height: 150px;
+        
+    }
+    .rev-box img{
+        width: 40px;
+        height: 40px;
+    }
+    .rev-box h2{
+        font-size: 0.6rem;
+    }
+    .rev-box svg{
+        width: 14px;
+    }
+    .rev-box p{
+        font-size: 0.6rem;
+    }
+    .about-me{
+        height: auto;
+    }
+    .about-me-content{
+        /* border: 2px solid blue; */
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about-me-content img{
+        width: 300px;
+        height: 300px;
+        transform: none;
+        position: static;
+    } 
+    .about-me-text{
+        width: 300px;
+        height: 300px;
+        transform: none;
+        position: static;
+        margin-top: 20px;
+
+    }
+    .about-me-text p{
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        font-size: 0.8rem;
+        transform: none;
+
+    }
+    .about-me-text button{
+        transform: none;
+        margin-top: 20px;
+    }
+    .about-me-head h1{
+        font-size: 1rem;
+       
+    }
+    .listings{
+        height: auto;
+    }
+    .list-box{
+        flex-direction: column;
+    }
+    .list-box svg{
+        display: none;
+    }
+    .list-info{
+        display: flex;
+        margin-top:20px ;
+    }
+    .list-info h2{
+        font-size: 0.8rem;
+    }
+    .list-info p{
+        margin-left: 0;
+    }
+    .list-text{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid blue; */
+        text-align: center;
+        margin: 10px;
+    }
+    .list-container button{
+        margin-left: 0;
+    }
+    .list-container{
+        grid-row: 2/12;
+    }
+    .listings-link{
+        grid-row: 12/13;
+    }
+    .listings-link a{
+        margin: 0;
+    }
+    .faq{
+        background: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .house-info-container{
+        height : calc(100vh * 3);
+    }
+    .house-info-container img{
+        width: 90%;
+        height: 150px;
+    }
+    .house-side-images{
+        gap: 0.2rem;
+    }
+    .house-side-images img{
+        width: 60px;
+        height: auto;
+    }
+ 
+    .video-wrapper img{
+        width: 60px;
+        height: auto;
+    }
+    .video-wrapper{
+        width: 350px;
+        height: 200px;
+    }
+    .video-info{
+        width: 350px;
+        padding: 10px;
+        height: 200px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 375px) {
+    .landpage{
+       max-width: 375px;
+    }
+    .land-content{
+        grid-column: 1/-1;
+        grid-row: 4/11;
+    }
+    .land-content h1{
+        font-size: 2rem;
+    }
+    .land-content p{
+        font-size: 0.8rem;
+    }
+    .links-container{
+        grid-row:12/13;
+        padding: 20px;
+    }
+    .links-container a{
+        font-size: 0.8rem;
+    }
+    .land-header h1{
+        font-size: 1rem;
+    }
+    .static-bar{
+        display: block;
+    }
+    .rev-header h1{
+        font-size: 1rem;
+    }
+    .rev-box{
+        width: 150px;
+        height: 150px;
+    }
+    .rev-box img{
+        width: 50px;
+        height: 50px;
+    }
+    .rev-box h2{
+        font-size: 0.7rem;
+    }
+    .rev-box svg{
+        width: 15px;
+    }
+    .rev-box p{
+        font-size: 0.6rem;
+    }
+    .account-rev-box{
+        height: 70px;
+        width: 300px;
+        margin: 10px;
+    }
+    .account-rev-box svg{
+        width: 13px;
+    }
+    .account-rev-box p{
+        font-size: 0.7rem;
+    }
+    .account-rev-box:nth-of-type(1) img{
+        width: 30px;
+    }
+    .account-rev-box:nth-of-type(2) img{
+        width: 30px;
+    }
+    
+    .about-me-text{
+        width: 300px;
+        height: 300px;
+        transform: none;
+        position: static;
+        margin-top: 0px;
+
+    }
+    .about-me-content img{
+        height: 200px;
+    }
+    .about-me-text p{
+        margin-top: 0px;
+        width: 300px;
+        height: 300px;
+        font-size: 0.7rem;
+        transform: none;
+    }
+    .about-me-text button{
+        margin-top: 20px;
+    }
+    .listings{
+        margin-block-end: 50px;
+    }
+    .listings-link a{
+        margin: 0;
+    }
+    .house-side-images{
+        gap: 0.2rem;
+    }
+    .house-side-images img{
+        width: 50px;
+        height: auto;
+    }
+    .house-info{
+        width: 350px;
+    }
+}
+

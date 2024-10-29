@@ -1,0 +1,182 @@
+.listings{
+    width: 100%;
+    height: 110%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    margin-top: 120px;
+    text-align: center;
+    position: relative;
+}
+.list-header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-header h1{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+.list-container{
+    grid-column: 2/12;
+    grid-row: 2/11;
+    /* border: 1px solid red;*/
+    text-align: center;
+} 
+.list-box{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.list-box img{
+    width: 350px ;
+    height: 200px;
+    /* object-fit: contain; */
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.8);
+}
+.list-box svg{
+    width: 20px;
+    fill: rgb(85, 85, 85);
+}
+.list-info{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.list-info p{
+    margin-left: 30px;
+}
+.list-container button{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 130px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+.list-container button:hover{
+    background: black;
+    color: white;
+}
+.listings-link{
+    grid-row: 12/13;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.listings-link a{
+    margin-left: 130px;
+    color: black;
+    text-transform: c2apitalize;
+}
+.list-box-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* ------------------------------LISTINGS PAGE STYLE------------------------------------------------------- */
+.listings-wrapper{
+    width: 100%;
+    padding: 30px;
+    height: auto;
+}
+.listings-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.listings-header h1{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.listings-boxes-container{
+    /* border: 1px solid blue; */
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+}
+.listings-box{
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgb(241, 241, 241);
+    cursor: pointer;
+    position: relative;
+}
+.listings-box img{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 60%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.listings-box:hover img{
+    transform: scale(1.09);
+}
+.listing-info{
+    padding: 10px;
+    width: 100%;
+    height: 40%;
+}
+.listing-info button{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: transparent;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.listing-info button:hover{
+    background: black;
+    color: white;
+}
+.active-fav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    padding-inline: 20px;
+}
+.active-fav svg{
+    width: 25px;
+}
+.active-fav p{
+    background: black;
+    padding: 1px 15px ;
+    border-radius:50px;
+    color: white;
+}
+.added{
+    fill: tomato;
+}
+.listings-nav-header h1{
+    color: black;
+}
+.listings-nav-header nav ul li a{
+    color: black;
+}

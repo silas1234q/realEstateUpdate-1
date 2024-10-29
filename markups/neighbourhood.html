@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/neighbourhood.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="searchForm">
+        <label for="location">Location:</label>
+        <input id="location" type="text" placeholder="Enter neighborhood or city">
+
+        <label for="propertyType">Property Type:</label>
+        <select id="propertyType">
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="condo">Condo</option>
+        </select>
+
+        <label for="priceRange">Price Range:</label>
+        <input id="priceRange" type="text" placeholder="e.g., 200000 - 500000">
+
+        <button type="button" onclick="searchProperties()">Search</button>
+    </form>
+
+    <div id="results"></div>
+    <script src="../scripts/neighbourhood.js"></script>
+</body>
+</html>
