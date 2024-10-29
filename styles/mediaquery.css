@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        -webkit-clip-path:circle(15% at right top);
         clip-path: circle(15% at right top);
         z-index: -1;
         transition: visibility 0.3s;
@@ -26,7 +27,7 @@
     }
     .navs.visible{
         clip-path: circle(100%);
-        z-index: 1;
+        z-index: -1;
     }
     
     .links{
@@ -167,6 +168,7 @@
         height: 100%;
         isolation: isolate;
         position: relative;
+        background: transparent;
     }
     .land-wrapper{
         isolation: isolate;
@@ -446,7 +448,7 @@
     }
     .house-side-images img{
         width: 50px;
-        height: auto;
+        height: 40px;
     }
     .house-info{
         width: 350px;
