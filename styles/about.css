@@ -37,12 +37,12 @@
 }
 .image-about:nth-last-of-type(2){
     width: 180px;
-    left: 420px;
+    left: 410px;
     bottom: 100px;
 }
 .about-image{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     position: relative;
     
 }
